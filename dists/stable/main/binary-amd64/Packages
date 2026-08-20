@@ -1,0 +1,84 @@
+Package: codelift-cli
+Architecture: amd64
+Version: 4.1.0-1
+Priority: optional
+Section: devel
+Maintainer: OpenRefactory, Inc. <tanin@openrefactory.com>
+Installed-Size: 10044
+Provides: codelift-bin
+Conflicts: codelift-gui
+Replaces: codelift-gui
+Filename: pool/main/c/codelift/codelift-cli_4.1.0-1_amd64.deb
+Size: 2997096
+MD5sum: d40665a59e92836e0d61303b0f34759c
+SHA1: ec3995a4b96541d02370c0ab2d9fb41b925ce096
+SHA256: 425a1f491bcf8a918e24f1bbe27af6b019a769144ea70e1c3e11f9a5e8214a94
+SHA512: 8d7618181a6b5f7033d8f2199f2deeca700bc6c16aa4783cf207721716d1ca3eadecf0a1d5533865b9dc46e3e46595b9254563ccaa3ee9c68f552e43ea41ec62
+Homepage: https://github.com/OpenRefactory-Inc/codelift
+Description: Extract fully qualified function names from published packages
+ codelift downloads a package from its registry, inspects its source or
+ metadata, and prints every fully qualified function, method and class name it
+ contains. It covers npm, PyPI, NuGet, Maven, Cargo, Go and RubyGems, and
+ resolves an informal vulnerability-report function reference to the canonical
+ symbol name for a given package version.
+ .
+ This package ships a fully static build with the graphical browser compiled
+ out, so it has no dependencies and suits servers, containers and minimal
+ images. For the desktop application install codelift-gui instead: the two
+ provide the same /usr/bin/codelift and cannot be installed together.
+
+Package: codelift-gui
+Architecture: amd64
+Version: 4.1.0-1
+Priority: optional
+Section: devel
+Maintainer: OpenRefactory, Inc. <tanin@openrefactory.com>
+Installed-Size: 23896
+Provides: codelift-bin
+Depends: libc6 (>= 2.17), libgcc-s1 (>= 3.0), libx11-6, libx11-xcb1, libxcursor1, libxrandr2, libxi6, libxkbcommon0, libxkbcommon-x11-0, libwayland-client0, libwayland-cursor0, libwayland-egl1, libgl1, libegl1
+Conflicts: codelift-cli
+Replaces: codelift-cli
+Filename: pool/main/c/codelift/codelift-gui_4.1.0-1_amd64.deb
+Size: 7115092
+MD5sum: 480f82c76ba5135c26444466cc6736b3
+SHA1: bc566f57bc924441791e07237a2114a12d03cc3e
+SHA256: 75b1cd375543817c4fbdfa4cff0cff734df8712f0d46b95b74fe86207b6316de
+SHA512: b8b03e80bf925d6807dbe31481117658457d550da74d10f4316a91efef4ca477f5ad8ab216a745bb7711c993e38771af239dc56cc9a7bc2aa268ec56b9f734e2
+Homepage: https://github.com/OpenRefactory-Inc/codelift
+Description: Extract fully qualified function names from published packages
+ codelift downloads a package from its registry, inspects its source or
+ metadata, and prints every fully qualified function, method and class name it
+ contains. It covers npm, PyPI, NuGet, Maven, Cargo, Go and RubyGems, and
+ resolves an informal vulnerability-report function reference to the canonical
+ symbol name for a given package version.
+ .
+ This package ships the build with the graphical symbol browser compiled in,
+ plus a desktop entry. It is dynamically linked against a glibc 2.17 floor, so
+ it runs across distributions. For servers and containers install
+ codelift-cli instead: the two provide the same /usr/bin/codelift and cannot be
+ installed together.
+
+Package: codelift
+Architecture: all
+Version: 4.1.0-1
+Priority: optional
+Section: devel
+Maintainer: OpenRefactory, Inc. <tanin@openrefactory.com>
+Installed-Size: 32
+Depends: codelift-cli (= 4.1.0-1) | codelift-gui (= 4.1.0-1)
+Filename: pool/main/c/codelift/codelift_4.1.0-1_all.deb
+Size: 1948
+MD5sum: c49a768a779c0eda7f074a4db90caec8
+SHA1: 6befdded627ee6a6cbec5d5c099dcf22672b9b38
+SHA256: f087853460d5a0b6288a8c427073a498e515070a0d349169d5b44552c3c3d3a4
+SHA512: 5ba3868cc3c3bf57758931023e0f2ac3a73f22e3912c47007dc8ea241ade0f76265b654885d928c267562f567c2ff7d5b382f52a3fc102ee94b5e232176a45fc
+Homepage: https://github.com/OpenRefactory-Inc/codelift
+Description: Extract fully qualified function names from published packages
+ codelift resolves an informal function reference from a vulnerability report to
+ the canonical, fully qualified symbol name for a specific package version,
+ across npm, PyPI, NuGet, Maven, Cargo, Go and RubyGems.
+ .
+ This is a metapackage. It installs codelift-cli (the dependency-free static
+ build) by default, and is equally satisfied by an existing codelift-gui
+ install. Install codelift-gui directly if you want the desktop application.
+
