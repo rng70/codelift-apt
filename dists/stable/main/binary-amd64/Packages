@@ -201,6 +201,35 @@ Description: Extract fully qualified function names from published packages
  images. For the desktop application install codelift-gui instead: the two
  provide the same /usr/bin/codelift and cannot be installed together.
 
+Package: codelift-cli
+Architecture: amd64
+Version: 4.7.0-1
+Priority: optional
+Section: devel
+Maintainer: OpenRefactory, Inc. <tanin@openrefactory.com>
+Installed-Size: 10096
+Provides: codelift-bin
+Conflicts: codelift-gui
+Replaces: codelift-gui
+Filename: pool/main/c/codelift/codelift-cli_4.7.0-1_amd64.deb
+Size: 3015392
+MD5sum: 8ad8fe4b5ffdd95bebefb4dfd126ad64
+SHA1: ed866a9f2b04d4c0680b1632ea53992603605b0f
+SHA256: 8c671e8730276063973aa041f3520cb6852df7bcc3fa016fbd43eaaa249e9af8
+SHA512: f0b11eb5ecee78d308a741ca85ad3567c49ae5f6aac54adb3321924114a14a5f9d6e110e2a88094f7150c47a2dbc14a7c2fb59b162a5b0c48f8bf0892c2a9a7f
+Homepage: https://github.com/OpenRefactory-Inc/codelift
+Description: Extract fully qualified function names from published packages
+ codelift downloads a package from its registry, inspects its source or
+ metadata, and prints every fully qualified function, method and class name it
+ contains. It covers npm, PyPI, NuGet, Maven, Cargo, Go and RubyGems, and
+ resolves an informal vulnerability-report function reference to the canonical
+ symbol name for a given package version.
+ .
+ This package ships a fully static build with the graphical browser compiled
+ out, so it has no dependencies and suits servers, containers and minimal
+ images. For the desktop application install codelift-gui instead: the two
+ provide the same /usr/bin/codelift and cannot be installed together.
+
 Package: codelift-gui
 Architecture: amd64
 Version: 4.1.0-1
@@ -418,6 +447,37 @@ Description: Extract fully qualified function names from published packages
  codelift-cli instead: the two provide the same /usr/bin/codelift and cannot be
  installed together.
 
+Package: codelift-gui
+Architecture: amd64
+Version: 4.7.0-1
+Priority: optional
+Section: devel
+Maintainer: OpenRefactory, Inc. <tanin@openrefactory.com>
+Installed-Size: 23980
+Provides: codelift-bin
+Depends: libc6 (>= 2.17), libgcc-s1 (>= 3.0), libx11-6, libx11-xcb1, libxcursor1, libxrandr2, libxi6, libxkbcommon0, libxkbcommon-x11-0, libwayland-client0, libwayland-cursor0, libwayland-egl1, libgl1, libegl1
+Conflicts: codelift-cli
+Replaces: codelift-cli
+Filename: pool/main/c/codelift/codelift-gui_4.7.0-1_amd64.deb
+Size: 7134564
+MD5sum: 19ae29b1d391a2c26a4e9c06581ef580
+SHA1: c2abd4d1d12690f3019401794c630ed1fe2a8946
+SHA256: b89144ff1baa064d0d617c3835d6ddf6659e6112c332af46617280e52e3929c4
+SHA512: f4a2b7198743f6a26edeaa6cfacf9a9e140cedbd91e650d30e59c449ae96f5a9e094c16b47a7f310b00320d309a5456126cce8112d10c1c80f49bdd019e355e0
+Homepage: https://github.com/OpenRefactory-Inc/codelift
+Description: Extract fully qualified function names from published packages
+ codelift downloads a package from its registry, inspects its source or
+ metadata, and prints every fully qualified function, method and class name it
+ contains. It covers npm, PyPI, NuGet, Maven, Cargo, Go and RubyGems, and
+ resolves an informal vulnerability-report function reference to the canonical
+ symbol name for a given package version.
+ .
+ This package ships the build with the graphical symbol browser compiled in,
+ plus a desktop entry. It is dynamically linked against a glibc 2.17 floor, so
+ it runs across distributions. For servers and containers install
+ codelift-cli instead: the two provide the same /usr/bin/codelift and cannot be
+ installed together.
+
 Package: codelift
 Architecture: all
 Version: 4.1.0-1
@@ -576,6 +636,30 @@ MD5sum: 821e999978f191a9d859dad062f86480
 SHA1: b75824aa0e601dadd4e7f823d5ed989fff7b7bb4
 SHA256: f2230f7bf2bf3f786ffb32241d71462b7feb1b0ecf6d90902c32b124380193d8
 SHA512: f9123935f6f8f0059130461b14abfa63f5f496cbb7d092a7b8bde5f77e82b24816e3fd4daaae730157ed4cd579d8120b884315f18a2617bd5ff456db6737a962
+Homepage: https://github.com/OpenRefactory-Inc/codelift
+Description: Extract fully qualified function names from published packages
+ codelift resolves an informal function reference from a vulnerability report to
+ the canonical, fully qualified symbol name for a specific package version,
+ across npm, PyPI, NuGet, Maven, Cargo, Go and RubyGems.
+ .
+ This is a metapackage. It installs codelift-cli (the dependency-free static
+ build) by default, and is equally satisfied by an existing codelift-gui
+ install. Install codelift-gui directly if you want the desktop application.
+
+Package: codelift
+Architecture: all
+Version: 4.7.0-1
+Priority: optional
+Section: devel
+Maintainer: OpenRefactory, Inc. <tanin@openrefactory.com>
+Installed-Size: 32
+Depends: codelift-cli (= 4.7.0-1) | codelift-gui (= 4.7.0-1)
+Filename: pool/main/c/codelift/codelift_4.7.0-1_all.deb
+Size: 1948
+MD5sum: 6f870a18ec14a9b5fa1dd6a53aca3d25
+SHA1: ac43f4a0c3584d075d285d7383af863eb4c82b34
+SHA256: bcf3718dc25e4afe87928213b2cbcf06c480e065a647210da6eb99f6f3af2000
+SHA512: 54684b7472dd9281075ec34c8a734a60502d249cc6a681b97352e339287040d28e34fcba89899fe0893779a9be189d28e8f41dbd3d9c51a1b7bfe939b307b848
 Homepage: https://github.com/OpenRefactory-Inc/codelift
 Description: Extract fully qualified function names from published packages
  codelift resolves an informal function reference from a vulnerability report to
