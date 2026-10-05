@@ -207,16 +207,16 @@ Version: 4.7.0-1
 Priority: optional
 Section: devel
 Maintainer: OpenRefactory, Inc. <tanin@openrefactory.com>
-Installed-Size: 10096
+Installed-Size: 13344
 Provides: codelift-bin
 Conflicts: codelift-gui
 Replaces: codelift-gui
 Filename: pool/main/c/codelift/codelift-cli_4.7.0-1_amd64.deb
-Size: 3015392
-MD5sum: 8ad8fe4b5ffdd95bebefb4dfd126ad64
-SHA1: ed866a9f2b04d4c0680b1632ea53992603605b0f
-SHA256: 8c671e8730276063973aa041f3520cb6852df7bcc3fa016fbd43eaaa249e9af8
-SHA512: f0b11eb5ecee78d308a741ca85ad3567c49ae5f6aac54adb3321924114a14a5f9d6e110e2a88094f7150c47a2dbc14a7c2fb59b162a5b0c48f8bf0892c2a9a7f
+Size: 3412520
+MD5sum: e8aa5477e0ddaafc38b56998daa5ab2c
+SHA1: c5b163c98f218a03324d0b433314045f8e87a127
+SHA256: 83d190509d0980610623d134c0817ce3dbbabb1fc0ee9dbb2b87e54f7aea2e9c
+SHA512: ba8e94f90813849cd719b94bb2f124b219709303be69051f25193628e33d21ce9e46e1032c7a3b8d75dfcca96032713eb5712f02ba51a4d58f9bcfb0cbe0ab6b
 Homepage: https://github.com/OpenRefactory-Inc/codelift
 Description: Extract fully qualified function names from published packages
  codelift downloads a package from its registry, inspects its source or
@@ -453,17 +453,17 @@ Version: 4.7.0-1
 Priority: optional
 Section: devel
 Maintainer: OpenRefactory, Inc. <tanin@openrefactory.com>
-Installed-Size: 23980
+Installed-Size: 23900
 Provides: codelift-bin
 Depends: libc6 (>= 2.17), libgcc-s1 (>= 3.0), libx11-6, libx11-xcb1, libxcursor1, libxrandr2, libxi6, libxkbcommon0, libxkbcommon-x11-0, libwayland-client0, libwayland-cursor0, libwayland-egl1, libgl1, libegl1
 Conflicts: codelift-cli
 Replaces: codelift-cli
 Filename: pool/main/c/codelift/codelift-gui_4.7.0-1_amd64.deb
-Size: 7134564
-MD5sum: 19ae29b1d391a2c26a4e9c06581ef580
-SHA1: c2abd4d1d12690f3019401794c630ed1fe2a8946
-SHA256: b89144ff1baa064d0d617c3835d6ddf6659e6112c332af46617280e52e3929c4
-SHA512: f4a2b7198743f6a26edeaa6cfacf9a9e140cedbd91e650d30e59c449ae96f5a9e094c16b47a7f310b00320d309a5456126cce8112d10c1c80f49bdd019e355e0
+Size: 7121748
+MD5sum: 8bfd165a248d1bb3c5429062d77afadb
+SHA1: b2bfc2fc2ab24c42f7df6506cfed6a12559f5a67
+SHA256: 76ba013b513284c2ce56399ee3df6a041aed576d3d5d8c4fc72a775d78e3bc53
+SHA512: 6a7e66422e3b88ba4b10b14220392712c0427ff33b16a64bb6997b978b20373749e9631e73b45fcd4ef62d06040857a99f9ae738604fb3a7f7d929fabeba3d33
 Homepage: https://github.com/OpenRefactory-Inc/codelift
 Description: Extract fully qualified function names from published packages
  codelift downloads a package from its registry, inspects its source or
@@ -655,11 +655,11 @@ Maintainer: OpenRefactory, Inc. <tanin@openrefactory.com>
 Installed-Size: 32
 Depends: codelift-cli (= 4.7.0-1) | codelift-gui (= 4.7.0-1)
 Filename: pool/main/c/codelift/codelift_4.7.0-1_all.deb
-Size: 1948
-MD5sum: 6f870a18ec14a9b5fa1dd6a53aca3d25
-SHA1: ac43f4a0c3584d075d285d7383af863eb4c82b34
-SHA256: bcf3718dc25e4afe87928213b2cbcf06c480e065a647210da6eb99f6f3af2000
-SHA512: 54684b7472dd9281075ec34c8a734a60502d249cc6a681b97352e339287040d28e34fcba89899fe0893779a9be189d28e8f41dbd3d9c51a1b7bfe939b307b848
+Size: 1940
+MD5sum: 42823ab50d539196f29837af9b10f654
+SHA1: 9f179671bd860e14bc66aac97d0dc22c29cb700b
+SHA256: ac3d7d36a92de78829411393cdc79a12a533adc34f893a879e68c1c74660bf48
+SHA512: e18be1af3c8157a2bda4a986d8364b53c3db37caa9a6379e8b9820b0d447c1515e765fbcc8081aeb1c78897411f426448279ca32293d723c2d38fb4f2d0ada3a
 Homepage: https://github.com/OpenRefactory-Inc/codelift
 Description: Extract fully qualified function names from published packages
  codelift resolves an informal function reference from a vulnerability report to
